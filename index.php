@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <title>Project Banco</title>
     </head>
+        <h1><strontg>Projeto Banco</strong></h1>
     <body>
-     <pre>
-         <?php 
+      <pre>
+        <?php
             require_once 'ContaBanco.php';
             $contaBancoJubileu = new ContaBanco();
             $contaBancoJubileu->abrirConta("CC");
@@ -25,9 +26,9 @@
             $contaBancoCreuza->sacar(630);
             $contaBancoCreuza->pagarMensal();
             $contaBancoCreuza->fecharConta();
-          print_r ($contaBancoJubileu); 
-          print_r($contaBancoCreuza);      
+            print_r ($contaBancoJubileu); 
+            print_r ($contaBancoCreuza);      
         ?>
-     </pre>
+      </pre>
     </body>
 </html>

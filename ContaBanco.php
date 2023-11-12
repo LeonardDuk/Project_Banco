@@ -1,13 +1,13 @@
 <?php 
 
 class ContaBanco{
-    //atributos
+ //atributos
     public $numConta;
     protected $tipo;
     private $dono;
     private $saldo;
     private $status ;       
-   //métodos
+ //métodos
     public function abrirConta($tipo){
         $this->settipo($tipo);
         $this->setstatus(true);
@@ -32,7 +32,6 @@ class ContaBanco{
     }
     public function depositar($valor){
         if($this->getstatus()){
-             // $this->saldo = $this->saldo + $valor;
             $this->setsaldo($this->getsaldo() + $valor );   
             echo"<p>Deposito de R$ $valor na conta de " . $this->getdono() . "</p>";
         }
@@ -71,7 +70,7 @@ class ContaBanco{
         }
     }
 
-    //métodos especiais 
+ //métodos especiais 
     public function __construct(){
         $this->setsaldo(0);
         $this->setstatus(false);
